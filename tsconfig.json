@@ -25,7 +25,7 @@
     "strict": true,
 
     // Type-checking settings.
-    "lib": ["ES2020"],
+    "lib": ["ES2020","dom", "scripthost" ],
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "types": ["jest"]

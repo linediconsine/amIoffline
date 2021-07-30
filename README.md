@@ -1,4 +1,4 @@
-# [libraryNameWithSpacesAndUpperCases]
+# am I offline ?
 
 [![Build Status](https://travis-ci.org/[repositoryOwner]/[repositoryName].svg?branch=master)](https://travis-ci.org/[repositoryOwner]/[repositoryName])
 [![License](https://badgen.net/github/license/[repositoryOwner]/[repositoryName])](./LICENSE)
@@ -10,10 +10,10 @@
 This library is published in the NPM registry and can be installed using any compatible package manager.
 
 ```sh
-npm install [libraryName] --save
+npm install amioffline --save
 
 # For Yarn, use the command below.
-yarn add [libraryName]
+yarn add amioffline
 ```
 
 ### Installation from CDN
@@ -22,14 +22,14 @@ This module has an UMD bundle available through JSDelivr and Unpkg CDNs.
 
 ```html
 <!-- For UNPKG use the code below. -->
-<script src="https://unpkg.com/[libraryName]"></script>
+<script src="https://unpkg.com/amioffline"></script>
 
 <!-- For JSDelivr use the code below. -->
-<script src="https://cdn.jsdelivr.net/npm/[libraryName]"></script>
+<script src="https://cdn.jsdelivr.net/npm/amioffline"></script>
 
 <script>
   // UMD module is exposed through the "[libraryCamelCaseName]" global variable.
-  console.log([libraryCamelCaseName]);
+  console.log(amioffline);
 </script>
 ```
 
