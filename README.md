@@ -1,9 +1,9 @@
 # am I offline ?
 
-[![Build Status](https://travis-ci.org/[repositoryOwner]/[repositoryName].svg?branch=master)](https://travis-ci.org/[repositoryOwner]/[repositoryName])
-[![License](https://badgen.net/github/license/[repositoryOwner]/[repositoryName])](./LICENSE)
-[![Library minified size](https://badgen.net/bundlephobia/min/[libraryName])](https://bundlephobia.com/result?p=[libraryName])
-[![Library minified + gzipped size](https://badgen.net/bundlephobia/minzip/[libraryName])](https://bundlephobia.com/result?p=[libraryName])
+[![Build Status](https://travis-ci.org/linediconsine/amIoffline.svg?branch=master)](https://travis-ci.org/linediconsine/amIoffline)
+[![License](https://badgen.net/github/license/linediconsine/amIoffline)](./LICENSE)
+[![Library minified size](https://badgen.net/bundlephobia/min/amIoffline)](https://bundlephobia.com/result?p=amIoffline)
+[![Library minified + gzipped size](https://badgen.net/bundlephobia/minzip/amIoffline)](https://bundlephobia.com/result?p=amIoffline)
 
 ## Installation
 
