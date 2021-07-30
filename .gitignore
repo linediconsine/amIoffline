@@ -3,7 +3,7 @@
 
 # Finder's configuration files (Mac).
 .DS_Store
-
+.idea/
 # Node.js modules.
 node_modules/
 
