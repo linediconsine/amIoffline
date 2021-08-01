@@ -1,27 +1,40 @@
 /*!
- * [libraryName] v0.0.0
+ * aio v0.0.0
  * (c) [authorFullName]
  * Released under the MIT License.
  */
 
 /**
- * Check if value is parseable to number.
+ * Check if the connection is working.
  * @example ```ts
- * isNumberParseable('AAAA');
+ * aio.amIonline();
  * //=> false
  *
- * isNumberParseable('100');
+ * aio.amIonline();
  * //=> true
  *
- * if (!isNumberParseable(value))
- *   throw new Error('Value can\'t be parseable to `Number`.')
- * return Number(value);
+ * aio.whenOffline( () => {
+ *   alert('lost connection')
+ * } )
  * ```
- * @param value - An `unknown` value to be checked.
+ * @param void
  */
-var isNumberParseable = function (value) {
-    return !Number.isNaN(Number(value));
-};
+var aio = /** @class */ (function () {
+    function aio() {
+    }
+    aio.amIonline = function () {
+        return navigator.onLine;
+    };
+    aio.whenOffline = function (callback) {
+        var _this = this;
+        setInterval(function () {
+            if (_this.amIonline()) {
+                callback();
+            }
+        }, 400);
+    };
+    return aio;
+}());
 
-export { isNumberParseable };
+export default aio;
 //# sourceMappingURL=index.esm.js.map

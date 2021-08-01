@@ -1,23 +1,21 @@
 /**
- * A Branded Type for values parseable to number.
- */
-export declare type NumberParseable = (number | string | boolean) & {
-    readonly isNumberParseble: unique symbol;
-};
-/**
- * Check if value is parseable to number.
+ * Check if the connection is working.
  * @example ```ts
- * isNumberParseable('AAAA');
+ * aio.amIonline();
  * //=> false
  *
- * isNumberParseable('100');
+ * aio.amIonline();
  * //=> true
  *
- * if (!isNumberParseable(value))
- *   throw new Error('Value can\'t be parseable to `Number`.')
- * return Number(value);
+ * aio.whenOffline( () => {
+ *   alert('lost connection')
+ * } )
  * ```
- * @param value - An `unknown` value to be checked.
+ * @param void
  */
-export declare const isNumberParseable: (value: unknown) => value is NumberParseable;
+declare class aio {
+    static amIonline(): boolean;
+    static whenOffline(callback: () => void): void;
+}
+export default aio;
 //# sourceMappingURL=index.d.ts.map
