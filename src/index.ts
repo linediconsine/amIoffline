@@ -14,14 +14,14 @@
  * @param void
  */
 class aio {
-  static amIonline() {
-    return navigator.onLine
+  static amIonline(): boolean {
+    return navigator.onLine;
   }
 
   static whenOffline(callback: () => void): void {
     setInterval(() => {
       if (this.amIonline()) {
-        callback()
+        callback();
       }
     }, 400);
   }
