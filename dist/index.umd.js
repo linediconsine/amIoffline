@@ -1,6 +1,6 @@
 /*!
- * aio v0.0.0
- * (c) [authorFullName]
+ * amioffline v0.0.1
+ * (c) undefined
  * Released under the MIT License.
  */
 
@@ -34,7 +34,7 @@
       aio.whenOffline = function (callback) {
           var _this = this;
           setInterval(function () {
-              if (_this.amIonline()) {
+              if (!_this.amIonline()) {
                   callback();
               }
           }, 400);
@@ -42,7 +42,7 @@
       return aio;
   }());
 
-  exports.default = aio;
+  exports.aio = aio;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 

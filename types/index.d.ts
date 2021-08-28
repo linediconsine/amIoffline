@@ -13,9 +13,8 @@
  * ```
  * @param void
  */
-declare class aio {
+export declare class aio {
     static amIonline(): boolean;
     static whenOffline(callback: () => void): void;
 }
-export default aio;
 //# sourceMappingURL=index.d.ts.map

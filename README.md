@@ -21,15 +21,15 @@ yarn add amioffline
 This module has an UMD bundle available through JSDelivr and Unpkg CDNs.
 
 ```html
-<!-- For UNPKG use the code below. -->
-<script src="https://unpkg.com/amioffline"></script>
 
 <!-- For JSDelivr use the code below. -->
-<script src="https://cdn.jsdelivr.net/npm/amioffline"></script>
+<script src="https://cdn.jsdelivr.net/gh/linediconsine/amIoffline/dist/index.mjs"></script>
 
 <script>
-  // UMD module is exposed through the "[libraryCamelCaseName]" global variable.
-  console.log(amioffline);
+  import aio  from "./aio.js";
+
+
+  aio.whenOffline(alert('OFFLINE'))
 </script>
 ```
 

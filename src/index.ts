@@ -13,18 +13,17 @@
  * ```
  * @param void
  */
-class aio {
+export class aio {
   static amIonline(): boolean {
     return navigator.onLine;
   }
 
   static whenOffline(callback: () => void): void {
     setInterval(() => {
-      if (this.amIonline()) {
+      if (!this.amIonline()) {
         callback();
       }
     }, 400);
   }
 }
 
-export default aio;
