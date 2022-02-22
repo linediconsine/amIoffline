@@ -13,7 +13,7 @@
  * ```
  * @param void
  */
-export class aio {
+class aio {
   static amIonline(): boolean {
     return navigator.onLine;
   }
@@ -27,3 +27,4 @@ export class aio {
   }
 }
 
+export default aio;
